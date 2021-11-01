@@ -46,27 +46,48 @@ namespace HW_app
         #region Filter Funksions
 
 
-        public void FilterBooksGenre(string wantedGenre)
+        public Book [] FilterBooksGenre(string wantedGenre)
         {
-
+            Book[] tempBooks = new Book[booksArr.Length];
+            int count = 0;
             for (int i = 0; i < booksArr.Length; i++)
             {
                 if (booksArr[i].genre == wantedGenre)
                 {
+                    tempBooks[count] = booksArr[i];
+                    count++;
                     ShowBook(booksArr[i]);
+
                 }
             }
+            Book[] filteredBook = new Book[count];
+            for (int i = 0; i < filteredBook.Length; i++)
+            {
+                filteredBook[i] = tempBooks[i];
+            }
+            return filteredBook;
+            
         }
 
-        public void FilterBooksPrice(double minPrice, double maxPirce)
+        public Book [] FilterBooksPrice(double minPrice, double maxPirce)
         {
+            Book[] tempBooks = new Book[booksArr.Length];
+            int count = 0;
             for (int i = 0; i < booksArr.Length; i++)
             {
                 if (booksArr[i].price > minPrice && booksArr[i].price < maxPirce)
                 {
+                    tempBooks[count] = booksArr[i];
+                    count++;
                     ShowBook(booksArr[i]);
                 }
             }
+            Book[] filteredBook = new Book[count];
+            for (int i = 0; i < filteredBook.Length; i++)
+            {
+                filteredBook[i] = tempBooks[i];
+            }
+            return filteredBook;
         }
         #endregion
 

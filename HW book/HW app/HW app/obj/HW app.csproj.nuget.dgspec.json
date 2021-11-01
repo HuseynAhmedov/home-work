@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Huseyn\\source\\repos\\HW app\\HW app\\HW app.csproj": {}
+    "C:\\Users\\tu201906085\\Desktop\\git\\git storage\\home-work\\HW book\\HW app\\HW app\\HW app.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Huseyn\\source\\repos\\HW app\\HW app\\HW app.csproj": {
+    "C:\\Users\\tu201906085\\Desktop\\git\\git storage\\home-work\\HW book\\HW app\\HW app\\HW app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Huseyn\\source\\repos\\HW app\\HW app\\HW app.csproj",
+        "projectUniqueName": "C:\\Users\\tu201906085\\Desktop\\git\\git storage\\home-work\\HW book\\HW app\\HW app\\HW app.csproj",
         "projectName": "HW app",
-        "projectPath": "C:\\Users\\Huseyn\\source\\repos\\HW app\\HW app\\HW app.csproj",
-        "packagesPath": "C:\\Users\\Huseyn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Huseyn\\source\\repos\\HW app\\HW app\\obj\\",
+        "projectPath": "C:\\Users\\tu201906085\\Desktop\\git\\git storage\\home-work\\HW book\\HW app\\HW app\\HW app.csproj",
+        "packagesPath": "C:\\Users\\tu201906085\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tu201906085\\Desktop\\git\\git storage\\home-work\\HW book\\HW app\\HW app\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Huseyn\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
+          "C:\\Users\\tu201906085\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +25,6 @@
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -55,12 +53,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.20, 3.1.20]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

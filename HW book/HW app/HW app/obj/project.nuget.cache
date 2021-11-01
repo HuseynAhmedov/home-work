@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "aV28fC4TCSjScrQ2p1AFuZ2H1O+ZIEh1QC51J6aUd7DWNZ2kaMH5WXPK9WSgwksd07zrYs1mWMQRMgZVW3zaCQ==",
+  "dgSpecHash": "3c0LHYzPy2ZbiZoEW58v6yEyY0jchmUjM1APLUyJwb6+vlQqBR1eZf3Wx1xkDGQJBuwOvhwrUMqT0JXCqr4BXA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Huseyn\\source\\repos\\HW app\\HW app\\HW app.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\tu201906085\\Desktop\\git\\git storage\\home-work\\HW book\\HW app\\HW app\\HW app.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tu201906085\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.20\\microsoft.netcore.app.host.win-x64.3.1.20.nupkg.sha512"
+  ],
   "logs": []
 }
