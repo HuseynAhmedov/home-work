@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Huseyn\\Desktop\\home work\\HW string funk\\HW app\\HW app\\HW app.csproj": {}
+    "C:\\Users\\Huseyn\\source\\repos\\HW app\\HW app\\HW app.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Huseyn\\Desktop\\home work\\HW string funk\\HW app\\HW app\\HW app.csproj": {
+    "C:\\Users\\Huseyn\\source\\repos\\HW app\\HW app\\HW app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Huseyn\\Desktop\\home work\\HW string funk\\HW app\\HW app\\HW app.csproj",
+        "projectUniqueName": "C:\\Users\\Huseyn\\source\\repos\\HW app\\HW app\\HW app.csproj",
         "projectName": "HW app",
-        "projectPath": "C:\\Users\\Huseyn\\Desktop\\home work\\HW string funk\\HW app\\HW app\\HW app.csproj",
+        "projectPath": "C:\\Users\\Huseyn\\source\\repos\\HW app\\HW app\\HW app.csproj",
         "packagesPath": "C:\\Users\\Huseyn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Huseyn\\Desktop\\home work\\HW string funk\\HW app\\HW app\\obj\\",
+        "outputPath": "C:\\Users\\Huseyn\\source\\repos\\HW app\\HW app\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

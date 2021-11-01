@@ -8,31 +8,52 @@ namespace HW_app
         {
             //--------------------------------------------------------------------
             //[ 1 ] Verilmis string variable-in deyerini icerisinde her soz arasinda bir bosluq gelecek vezyete salan metod
-            //string textMain = "  this   isnt  how you   write    ";
+
+            //Console.Write("\nEnter text : ");
+            //string textMain = Console.ReadLine();
             //FixString(textMain);
+
             //--------------------------------------------------------------------
             //[ 2 ]  Gonderilmis string deyerinin asagidaki sertleri odeyib odemediyini qaytaran metod
 
-            //string textMain = " Panzerkampfwagen 6 Tiger Ausf. E  ";
-            //Console.WriteLine(CheakStringFormat(textMain));
+            //Console.Write("\nEnter text : ");
+            //string textMain = Console.ReadLine();
+            //CheakStringFormat(textMain);
 
             //--------------------------------------------------------------------
             //[ 3 ]  Parameter olaraq integer array variable-i (reference) ve bir integer value qebul eden ve hemin integer value-nu integer array-e yeni element kimi elave eden metod.
 
-            //int[] arrInt = new int[10] { 4, 6, 3, 5, 3, 2, 5, 6, 1, 2 };
-            //AddNum(ref arrInt , 10);
+            //int[] arrInt = new int[10];
+
+            //string inputStr = "";
+
+            //for (int i = 0; i < arrInt.Length;)
+            //{
+            //    Console.Write("\nEnter Number : ");
+            //    inputStr = Console.ReadLine();
+            //    if (int.TryParse(inputStr,out arrInt[i])) i++;
+            //}
+
+            //AddNum(ref arrInt, 10);
 
             //--------------------------------------------------------------------
             //[ 4 ] Gonderilmis string deyerinideki sözlərdən ibaret array qaytaran metod 
 
-            //string textMain = " Art of war ";
-            //string[] str = GetWordsArr(textMain);
+            //Console.Write("\nEnter text : ");
+            //string textMain = Console.ReadLine();
+            //GetWordsArr(textMain);
 
             //--------------------------------------------------------------------
             //[ 5 ] Göndərilmiş string arrayindəki string dəyərlərin son sözlərdən ibarrət array qaytaran metod
 
-            //string[] strArr = new string[4] {"Huseyn Ahmedov  " , "Ferid Resedov" , " Mahir Abbasov" , "Elnur Resedov Resid " };
-            //var strtest = GetLastWord(strArr);
+            //string[] strArr = new string[4] ;
+            //for (int i = 0; i < strArr.Length; i++)
+            //{
+            //    Console.Write("\nEnter text : ");
+            //    strArr[i] = Console.ReadLine();
+            //}
+
+            //GetLastWord(strArr);
 
             //--------------------------------------------------------------------
 
