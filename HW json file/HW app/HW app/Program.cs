@@ -3,6 +3,7 @@ using Nancy.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 
 namespace HW_app
 {
@@ -32,18 +33,19 @@ namespace HW_app
             //------------------------------------------------------------
             //[ 2 ]
 
-            //string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            //Console.Write(" Enter file name : ");
-            //path += @"\" + Console.ReadLine();
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            Console.Write(" Enter file name : ");
+            path += @"\" + Console.ReadLine();
 
-            //while (!Directory.Exists(path))
-            //{
-            //    path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            //    Console.Write("\n Given path does not exsist \n Enter file name : ");
-            //    path += @"\" + Console.ReadLine().Trim();
-            //}
-            //GetDirectories(path);
+            while (!Directory.Exists(path))
+            {
+                path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+                Console.Write("\n Given path does not exsist \n Enter file name : ");
+                path += @"\" + Console.ReadLine().Trim();
+            }
+            string [] allpaths = GetDirectories(path);
 
+            Console.ReadKey();
             //------------------------------------------------------------
         }
 
@@ -67,25 +69,33 @@ namespace HW_app
             return students;
         }
 
-        public static void GetDirectories(string path)
+        public static string [] GetDirectories(string path)
         {
+            string[] tempArr = new string[0];
+            StringBuilder sb = new StringBuilder();
             List<string> dirList =  new List<string>(Directory.GetDirectories(path));
             foreach (string subdirectory in dirList)
             {
-                GetSubDirectories(subdirectory);
-                Console.Write("\n");
+                GetSubDirectories(subdirectory, sb);
+                sb.Append("\n");
             }
+            foreach (var item in sb.ToString().Split("\n"))
+            {
+                Array.Resize(ref tempArr, tempArr.Length + 1);
+                tempArr[tempArr.Length - 1] = item;
+            }
+            Array.Resize(ref tempArr, tempArr.Length - 1);
+            return tempArr ;
         }
 
-        private static void GetSubDirectories(string dirStr)
+        private static void GetSubDirectories(string dirStr , StringBuilder sb)
         {
-            Console.WriteLine(dirStr);
+            sb.Append(dirStr);
             List<string> dirList = new List<string>(Directory.GetDirectories(dirStr));
             foreach (string subdirectory in dirList)
             {
-                Console.Write(" ");
-                GetSubDirectories(subdirectory);
-                Console.Write(" ");
+                sb.Append("\n");
+                GetSubDirectories(subdirectory , sb);
             }
         }
     }

@@ -16,6 +16,5 @@ namespace HW_app
             this.Surname = surname;
             this.Age = age;
         }
-
     }
 }
