@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application form</title>
+    <link rel="stylesheet" href="HW_1_Style.css">
+</head>
+<body>
+    <div class= "Container">
+        <h1>Application form</h1>
+        <div class = "Form_container">
+            <form>
+                <div class = "Main_info">
+                    <label for="F_Ad">Ad:</label><br>
+                <input type="text" id = "F_Ad"><br>
+                <label for="F_Soyad">Soyad:</label><br>
+                <input type="text" id = "F_Soyad"><br>
+                <label for="F_password">Şifrə:</label><br>
+                <input type="password" id = "F_password"><br>
+                </div>
+                <div class="Form_radio">
+                   <p>Cinsinizi seçin:</p>
+                   <label for="F_Man"><b>K</b></label>
+                   <input type="radio" id = F_Man name="Gender">
+                   <label for="F_Woman"><b>Q</b></label>
+                   <input type="radio" id = F_Woman name = "Gender">
+                </div>
+                <div class = "Check_box">
+                   <p>Bitirdiyiniz təhsil dərəcələrini seçin:</p>
+                   <input type="checkbox" id="F_Orta">
+                   <label for="F_Orta">Orta</label>
+                   <br>
+                   <input type="checkbox" id="F_Bakalavr">
+                   <label for="F_Bakalavr">Bakalavr</label>
+                   <br>
+                   <input type="checkbox" id="F_Magistr">
+                   <label for="F_Magistr">Magistr</label>
+                   <br>
+                   <input type="checkbox" id="F_Doktor">
+                   <label for="F_Doktor">Doktor</label>
+                   <br>
+                </div>
+                <div class = "Additional_info">
+                     
+                    <label for="F_Age">Yaş:</label><br>
+                    <input min="0" type="number" id="F_Age">
+                    <br>
+                    <label for="F_Height">Boy:</label><br>
+                    <input min="0" type="number" id="F_Height">
+                    <br>
+                    <label for="F_Weight">Çəki:</label><br>
+                    <input min=0 type="number" id="F_Weight">
+                    <br>
+                   
+                </div>
+                <div class="Form_button">
+                <input type="submit" value = "Təsdiqlə" id="F_button_Submit">
+                </div>
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>
