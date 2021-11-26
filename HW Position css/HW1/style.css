@@ -1,0 +1,185 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* 
+{
+    box-sizing: border-box;
+}
+
+#NavBarHeader
+{
+    width: 100%;
+    height: 110px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav_head_container 
+{
+    padding: 0 40px;
+    height: 40px;
+    background-color: rgb(0,72,204);
+    color: white;
+}
+
+.nav_head_container div
+{
+    display: inline-block;
+}
+
+.nav_head_info
+{
+    margin-right: 60%;
+    padding: 10px 0;
+    width: max-content;
+    height: 40px;
+}
+
+.nav_head_info span
+{
+    font-weight: 300;
+}
+
+.nav_bar_head_btn
+{
+    padding: 10px 0;
+    width: max-content;
+    height: 40px;
+}
+
+.nav_bar_head_btn a
+{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.nav_main_container
+{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(24,26,27);
+    color: white;
+    padding: 15px 40px;
+    align-items: center;
+}
+
+.nav_main_container
+{
+    position: relative;
+    padding: 8px 40px;
+}
+
+.nav_main_container nav
+{
+    width: 100%;
+}
+
+.nav_links ul
+{
+    justify-content: center
+}
+.nav_links a
+{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    top: 10px;
+}
+
+.nav_main_container div
+{
+    display: inline-flex;
+}
+.nav_links li 
+{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    display: inline-flex;
+}
+
+.nav_btn div 
+{
+    display: inline-flex;
+}
+.nav_logo img
+{
+    width: min-content;
+    height: 30px;
+    position: relative;
+    top : 10px;
+    margin-right: 20px;
+}
+
+#btn_order
+{
+    border-radius: 5px;
+    border : solid  10px rgb(0,72,204);
+    background-color: rgb(0,72,204);
+    margin-right: 10px;
+}
+
+#btn_reveal
+{
+    text-align: center;
+    border-radius: 5px;
+    border : solid  10px rgb(202,135,0);
+    background-color:rgb(202,135,0) ;
+}
+
+.btn_text
+{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+
+
