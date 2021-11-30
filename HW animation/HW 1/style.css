@@ -1,0 +1,240 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+  .col-m-1 {width: 8.33%;}
+  .col-m-2 {width: 16.66%;}
+  .col-m-3 {width: 25%;}
+  .col-m-4 {width: 33.33%;}
+  .col-m-5 {width: 41.66%;}
+  .col-m-6 {width: 50%;}
+  .col-m-7 {width: 58.33%;}
+  .col-m-8 {width: 66.66%;}
+  .col-m-9 {width: 75%;}
+  .col-m-10 {width: 83.33%;}
+  .col-m-11 {width: 91.66%;}
+  .col-m-12 {width: 100%;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{
+  .col-l-1 {width: 8.33%;}
+  .col-l-2 {width: 16.66%;}
+  .col-l-3 {width: 25%;}
+  .col-l-4 {width: 33.33%;}
+  .col-l-5 {width: 41.66%;}
+  .col-l-6 {width: 50%;}
+  .col-l-7 {width: 58.33%;}
+  .col-l-8 {width: 66.66%;}
+  .col-l-9 {width: 75%;}
+  .col-l-10 {width: 83.33%;}
+  .col-l-11 {width: 91.66%;}
+  .col-l-12 {width: 100%;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+  .col-xl-1 {width: 8.33%;}
+  .col-xl-2 {width: 16.66%;}
+  .col-xl-3 {width: 25%;}
+  .col-xl-4 {width: 33.33%;}
+  .col-xl-5 {width: 41.66%;}
+  .col-xl-6 {width: 50%;}
+  .col-xl-7 {width: 58.33%;}
+  .col-xl-8 {width: 66.66%;}
+  .col-xl-9 {width: 75%;}
+  .col-xl-10 {width: 83.33%;}
+  .col-xl-11 {width: 91.66%;}
+  .col-xl-12 {width: 100%;}
+}
+
+@font-face {
+    font-family:sans-serif;
+    src: url(fonts/Helvetica-Bold.ttf) format('Helvetica');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family:sans-serif;
+    src: url(fonts/helvetica-light-587ebe5a59211.ttf) format('Helvetica');
+    font-weight: 300;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+#ProductCatalogue
+{
+    margin: 0 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#catalogue-main-row
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.catalogue-sub-container
+{
+    border : rgb(235,235,235) 1px solid;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    transition: .3s all;
+}
+
+.catalogue-sub-container:hover
+{
+    transform:scale(104%);
+    transition: .3s ;
+    box-shadow:3px 3px 33px 6px grey;
+}
+
+.catalogue-sub-container>img
+{
+    width: 100%;
+    padding-top: 20px;
+}
+
+div.catalogue-info
+{
+    padding: 20px;
+}
+
+.catalogue-header
+{
+    font-size: 22px;
+    margin-bottom: 69px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+}
+
+.catalogue-price
+{
+    font-size: 24px;
+}
+
+.catalogue-price img
+{
+    width: 20px;
+}
+
+.catalogue-bottom
+{
+    display: flex;
+    align-items: center;
+    margin: 0 21px;
+    justify-content: space-between;
+}
+
+.catalogue-btn
+{
+    display: flex;
+    justify-content: center;
+    background-color: #d9d9d9;
+    width: 143px;
+    height: 33px;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.catalogue-btn a
+{
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.catalogue-price>span
+{
+    margin-right: 5px;
+}
+
