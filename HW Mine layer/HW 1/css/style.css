@@ -1,0 +1,125 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#GameMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#GameMain .movement-buttons {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  row-gap: 7px;
+}
+
+#GameMain .movement-buttons .move-btn {
+  font-size: 32px;
+  border: 1px black solid;
+  border-radius: 10px;
+}
+
+#GameMain .movement-buttons .bottom-btn {
+  padding: 0 12px;
+}
+
+#GameMain .movement-buttons .top-btn {
+  padding: 0 5px;
+}
+
+#PlayZone {
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  background-color: #008cff;
+  position: relative;
+}
+
+#PlayZone #MineLayer {
+  background-color: #424242;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+#PlayZone .naval-mine {
+  position: absolute;
+  background-color: black;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  top: 0;
+  left: 0;
+}
+/*# sourceMappingURL=style.css.map */

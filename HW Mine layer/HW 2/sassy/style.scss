@@ -1,0 +1,202 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*
+{
+    box-sizing: border-box;
+}
+
+
+.navbar-main-container
+{
+    padding: 25px 0 ;
+    margin: 0 250px;
+    .row
+    {
+        align-items: center;
+        flex-direction: row;
+    }
+}
+.navbar-links
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    ul 
+    {
+        display: flex;
+        padding: 0 !important;
+        margin: 0 !important;
+        
+    }
+    .navbar-link
+    {
+        position: relative;
+        padding: 0 9px;
+        a 
+        {
+            transition: .2s all;
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+            i 
+            {
+                font-size: 16px;
+            }
+        }
+        .sub-links
+        {
+            position: absolute;
+            display: none;
+        }
+    }
+    .navbar-link:hover
+    {
+        a 
+        {
+            color: rgb(255,90,60);
+        }
+    }
+}
+.navbar-btns
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 10px;
+    div 
+    {
+        padding: 10px;
+        transition: .2s ;
+        i 
+        {
+            font-size: 25px;
+        }
+    }
+    div:hover
+    {
+        background-color: rgb(255,90,60) ;
+    }
+}
+.navbar-top-main-container
+{
+    background-color: rgb(11,44,61);
+    position: relative;
+    .row 
+    {
+        margin: 0px 250px;
+        div 
+        {
+            padding: 0px !important;
+        }
+    }
+    .navbar-contacts
+    {
+        ul 
+        {
+            padding: 10px 0 ;
+            margin: 0px !important;
+            display: flex;
+            li
+            {
+                padding: 0 10px;
+                a 
+                {
+                    transition: .2s all;
+                    color: rgb(255, 255, 255);
+                    text-decoration: none;
+                    i 
+                    {
+                        color: rgb(255,90,60);
+                    }
+                }
+            }
+            li:hover
+            {
+                a
+                {
+                    color: rgb(255,90,60);
+                }
+            }
+        }
+    }
+    .navbar-social-media
+    {
+        ul 
+        {
+            column-gap: 10px;
+            padding: 10px 0 ;
+            margin: 0px !important;
+            display: flex;
+            justify-content: flex-end;
+            li 
+            {
+                a 
+                {
+                    color: white;
+                    text-decoration: none;
+                }
+                .header-top-btn
+                {
+                    position: absolute;
+                    top : 0;
+                    background-color: rgb(255,90,60);
+                    border: 10px solid rgb(255,90,60);
+                    a 
+                    {
+                        padding: 0 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
