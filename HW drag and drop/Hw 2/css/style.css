@@ -163,6 +163,9 @@ table {
 
 .navbar-top-main-container .row {
   margin: 0px 250px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbar-top-main-container .row div {
@@ -214,14 +217,126 @@ table {
   text-decoration: none;
 }
 
-.navbar-top-main-container .navbar-social-media ul li .header-top-btn {
-  position: absolute;
-  top: 0;
-  background-color: #ff5a3c;
-  border: 10px solid #ff5a3c;
+.header-top-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.navbar-top-main-container .navbar-social-media ul li .header-top-btn a {
-  padding: 0 20px;
+.header-top-btn a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  background-color: #ff5a3c;
+}
+
+.focus-main-container {
+  background-color: #f1f5f7;
+}
+
+.focus-main-container .focus-header {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.focus-main-container .focus-header .focus-small-header-text {
+  font-size: 16px;
+  color: #ff5a3c;
+  background-color: #ff5a3c40;
+  border-radius: 32%;
+  padding: 1px 15px;
+}
+
+.focus-main-container .focus-header .focus-main-header-text {
+  font-size: 44px;
+  font-weight: bold;
+}
+
+.focus-main-container .focus-cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.focus-main-container .focus-cards-container .card {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: relative;
+  margin: 15px;
+}
+
+.focus-main-container .focus-cards-container .card .card-info {
+  padding: 10px;
+}
+
+.focus-main-container .focus-cards-container .card .card-info .card-header-link a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+}
+
+.focus-main-container .focus-cards-container .card .card-info .card-header-link:hover a {
+  color: tomato;
+}
+
+.focus-main-container .focus-cards-container .card .card-info .card-description-text {
+  color: #5c727d;
+  font-size: 14px;
+  text-align: center;
+}
+
+.focus-main-container .focus-cards-container .card .card-info .card-btn {
+  color: #5c727d;
+  font-size: 14px;
+  text-decoration: none;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+}
+
+.focus-main-container .focus-cards-container .card .card-info .card-btn:hover {
+  color: tomato;
+}
+
+.focus-main-container .focus-cards-container .card:hover {
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.focus-main-container .focus-cards-container .card:hover::after {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  background-color: tomato;
+  height: 10px;
+  bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
